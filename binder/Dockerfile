@@ -1,1 +1,1 @@
-FROM bretonse/badlands:latest
+FROM badlandsmodel/badlands:latest
