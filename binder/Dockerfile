@@ -11,7 +11,7 @@ USER root
 USER jovyan
 
 # Copiar el archivo de requerimientos
-COPY requirements.txt /tmp/
+COPY binder/requirements.txt /tmp/
 
 # Instalar dependencias de Python
 RUN pip install --no-cache-dir -r /tmp/requirements.txt
