@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<badlands xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+    <!-- Regular grid structure -->
+<grid>
+    <demfile>xyz.csv</demfile>
+    <boundary>fixed</boundary>
+</grid>
+
+<time>
+    <start>0.0</start>
+    <end>20000000.0</end>
+    <display>250000.0</display>
+    <output>250000.0</output>
+</time>
+
+<tectonic>
+    <disp3d>0</disp3d>
+    <events>1</events>
+    <disp>
+	<dstart>0.</dstart>
+	<dend>20000000.</dend>
+	<dfile>stepMapOficial.csv</dfile>
+    </disp>
+</tectonic>
+
+<precipitation>
+    <climates>1</climates>
+    <rain>
+        <rstart>0.0</rstart>
+        <rend>20000000.0</rend>
+        <rfile>precipitation_map_1m.csv</rfile>
+        <ratecol>precip</ratecol>
+    </rain>
+</precipitation>
+
+<sp_law>
+    <dep>0</dep>
+    <m>0.5</m>
+    <n>1.0</n>
+    <erodibility>5.e-6</erodibility>
+</sp_law>
+
+<creep>
+    <caerial>0.8</caerial>
+    <cmarine>1.</cmarine>
+    <criver>10.</criver>
+</creep>
+
+<output>
+    <interval>250000.</interval>
+    <directory>output</directory>
+</output>
+
+<out prefix="output" interval="250000" netcdf="True" />
+
+<outfolder>output</outfolder>
+</badlands>
