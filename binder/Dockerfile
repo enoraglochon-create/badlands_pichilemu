@@ -17,7 +17,6 @@ RUN apt-get update && \
 USER jovyan
 
 COPY binder/requirements.txt /tmp/
-RUN pip install --no-cache-dir -r /tmp/requirements.txt || echo "ERROR EN PIP" && \
-    tail -n 200 /root/.cache/pip/log/* || true
+RUN pip install --no-cache-dir -r /tmp/requirements.txt
 
 WORKDIR /home/jovyan
