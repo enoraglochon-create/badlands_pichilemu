@@ -9,7 +9,7 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Instala Badlands desde el repositorio público de GitHub (en modo editable)
-RUN pip install --no-cache-dir git+https://github.com/badlands-model/pyBadlands.git@v1.0.0
+RUN pip install --verbose --no-cache-dir git+https://github.com/badlands-model/pyBadlands.git
 
 # Instala dependencias adicionales si las necesitas (ejemplo matplotlib, rasterio, etc.)
 RUN pip install --no-cache-dir \
