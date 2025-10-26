@@ -1,4 +1,7 @@
-numpy==1.25.0
+numpy
+matplotlib
 scipy
+pandas
+jupyter
 
 git+https://github.com/badlands-model/pyBadlands.git
