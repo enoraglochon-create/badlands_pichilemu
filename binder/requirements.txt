@@ -3,4 +3,5 @@ matplotlib
 scipy
 pandas
 jupyter
+
 git+https://github.com/badlands-model/pyBadlands.git
